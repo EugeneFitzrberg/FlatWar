@@ -1,0 +1,45 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/eugene/flatwar/FlatWar.csproj": {}
+  },
+  "projects": {
+    "/Users/eugene/flatwar/FlatWar.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/eugene/flatwar/FlatWar.csproj",
+        "projectName": "FlatWar",
+        "projectPath": "/Users/eugene/flatwar/FlatWar.csproj",
+        "packagesPath": "/Users/eugene/.nuget/packages/",
+        "outputPath": "/Users/eugene/flatwar/.mono/temp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/eugene/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "runtimeIdentifierGraphPath": "/Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

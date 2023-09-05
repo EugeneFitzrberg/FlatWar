@@ -1,0 +1,8 @@
+/Users/eugene/flatwar/.mono/temp/bin/Debug/FlatWar.dll
+/Users/eugene/flatwar/.mono/temp/bin/Debug/FlatWar.pdb
+/Users/eugene/flatwar/.mono/temp/obj/Debug/FlatWar.csproj.AssemblyReference.cache
+/Users/eugene/flatwar/.mono/temp/obj/Debug/FlatWar.AssemblyInfoInputs.cache
+/Users/eugene/flatwar/.mono/temp/obj/Debug/FlatWar.AssemblyInfo.cs
+/Users/eugene/flatwar/.mono/temp/obj/Debug/FlatWar.csproj.CoreCompileInputs.cache
+/Users/eugene/flatwar/.mono/temp/obj/Debug/FlatWar.dll
+/Users/eugene/flatwar/.mono/temp/obj/Debug/FlatWar.pdb
