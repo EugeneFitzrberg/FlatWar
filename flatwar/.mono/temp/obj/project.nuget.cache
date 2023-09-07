@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sR2CSyp5mIQYGhFGfRvS9ixvpQCTqPjxPzV3D+9I0YGhDi5RRHOz20mq8ipDpvdzEqwXfJy2pvbslN9xgux8vg==",
+  "dgSpecHash": "8QPCsKZCMsKTrlAndxPV1cm9XmrXc20AXBbkCtrkNI6/cJkE2+Xr3L/vD+K4OWmLKDcd9KxFmvHt/HcnPix9xw==",
   "success": true,
-  "projectFilePath": "/Users/eugene/flatwar/FlatWar.csproj",
+  "projectFilePath": "/Users/eugene/Documents/GitHub/FlatWar/flatwar/FlatWar.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

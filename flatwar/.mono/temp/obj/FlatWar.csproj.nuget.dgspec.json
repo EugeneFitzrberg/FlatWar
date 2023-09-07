@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/eugene/flatwar/FlatWar.csproj": {}
+    "/Users/eugene/Documents/GitHub/FlatWar/flatwar/FlatWar.csproj": {}
   },
   "projects": {
-    "/Users/eugene/flatwar/FlatWar.csproj": {
+    "/Users/eugene/Documents/GitHub/FlatWar/flatwar/FlatWar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/eugene/flatwar/FlatWar.csproj",
+        "projectUniqueName": "/Users/eugene/Documents/GitHub/FlatWar/flatwar/FlatWar.csproj",
         "projectName": "FlatWar",
-        "projectPath": "/Users/eugene/flatwar/FlatWar.csproj",
+        "projectPath": "/Users/eugene/Documents/GitHub/FlatWar/flatwar/FlatWar.csproj",
         "packagesPath": "/Users/eugene/.nuget/packages/",
-        "outputPath": "/Users/eugene/flatwar/.mono/temp/obj/",
+        "outputPath": "/Users/eugene/Documents/GitHub/FlatWar/flatwar/.mono/temp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/eugene/.config/NuGet/NuGet.Config"
