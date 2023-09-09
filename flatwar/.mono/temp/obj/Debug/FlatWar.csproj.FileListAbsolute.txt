@@ -14,3 +14,12 @@
 /Users/eugene/Documents/GitHub/FlatWar/flatwar/.mono/temp/obj/Debug/FlatWar.csproj.CoreCompileInputs.cache
 /Users/eugene/Documents/GitHub/FlatWar/flatwar/.mono/temp/obj/Debug/FlatWar.dll
 /Users/eugene/Documents/GitHub/FlatWar/flatwar/.mono/temp/obj/Debug/FlatWar.pdb
+C:\Users\yakov\Documents\GitHub\FlatWar\flatwar\.mono\temp\bin\Debug\FlatWar.dll
+C:\Users\yakov\Documents\GitHub\FlatWar\flatwar\.mono\temp\bin\Debug\FlatWar.pdb
+C:\Users\yakov\Documents\GitHub\FlatWar\flatwar\.mono\temp\obj\Debug\FlatWar.csproj.AssemblyReference.cache
+C:\Users\yakov\Documents\GitHub\FlatWar\flatwar\.mono\temp\obj\Debug\FlatWar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yakov\Documents\GitHub\FlatWar\flatwar\.mono\temp\obj\Debug\FlatWar.AssemblyInfoInputs.cache
+C:\Users\yakov\Documents\GitHub\FlatWar\flatwar\.mono\temp\obj\Debug\FlatWar.AssemblyInfo.cs
+C:\Users\yakov\Documents\GitHub\FlatWar\flatwar\.mono\temp\obj\Debug\FlatWar.csproj.CoreCompileInputs.cache
+C:\Users\yakov\Documents\GitHub\FlatWar\flatwar\.mono\temp\obj\Debug\FlatWar.dll
+C:\Users\yakov\Documents\GitHub\FlatWar\flatwar\.mono\temp\obj\Debug\FlatWar.pdb

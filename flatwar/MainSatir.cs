@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class Camera2D : Godot.Camera2D
+public class MainSatir : Node2D
 {
 	// Declare member variables here. Examples:
 	// private int a = 2;
@@ -18,4 +18,20 @@ public class Camera2D : Godot.Camera2D
 //  {
 //      
 //  }
+
+
+
+private void _on_Detection_Radius_body_entered(object body)
+{
+	GD.Print("Body has entered "  + body);
+	// Replace with function body.
+}
+
+
+private void _on_Detection_Radius_body_exited(object body)
+{
+	
+	GD.Print("Body has closed " + body);
+	// Replace with function body.
+}
 }
