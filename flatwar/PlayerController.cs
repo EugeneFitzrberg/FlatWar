@@ -26,10 +26,10 @@ public class PlayerController : KinematicBody2D
 		velocity.x += speed;
 			mainSprite.FlipH = false;
 		}
-	if(Input.IsActionJustPressed("ui_down")){
+	if(Input.IsActionPressed("ui_down")){
 		velocity.y += speed;
 	}
-	if(Input.IsActionJustPressed("ui_up")){
+	if(Input.IsActionPressed("ui_up")){
 		velocity.y -= speed;
 	}
 
