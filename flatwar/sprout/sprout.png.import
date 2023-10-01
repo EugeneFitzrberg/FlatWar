@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sprite-0001 — копия.png-0a0be1f018bc60bf805c2ad5f6ea8964.stex"
+path="res://.import/sprout.png-4e8bf557723400871e88955e82ce2cd0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://satir_girl/Sprite-0001 — копия.png"
-dest_files=[ "res://.import/Sprite-0001 — копия.png-0a0be1f018bc60bf805c2ad5f6ea8964.stex" ]
+source_file="res://sprout/sprout.png"
+dest_files=[ "res://.import/sprout.png-4e8bf557723400871e88955e82ce2cd0.stex" ]
 
 [params]
 

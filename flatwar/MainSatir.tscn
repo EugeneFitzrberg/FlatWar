@@ -4,6 +4,9 @@
 [ext_resource path="res://BulletForSatir.tscn" type="PackedScene" id=2]
 [ext_resource path="res://MainSatir.cs" type="Script" id=3]
 
+[sub_resource type="CircleShape2D" id=27]
+radius = 96.1301
+
 [sub_resource type="AtlasTexture" id=20]
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 32, 32 )
@@ -41,27 +44,24 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CircleShape2D" id=27]
-radius = 79.6304
-
 [node name="MainSatir" type="Node2D"]
 position = Vector2( 0, -1 )
 script = ExtResource( 3 )
 BulletForSatir = ExtResource( 2 )
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -0.999995, 5.36442e-06 )
-scale = Vector2( 0.9375, 1 )
-frames = SubResource( 26 )
-animation = "simple_anim"
-frame = 2
-playing = true
 
 [node name="Detection Radius" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detection Radius"]
 position = Vector2( 2, -1 )
 shape = SubResource( 27 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -0.999995, 5.36442e-06 )
+scale = Vector2( 0.9375, 1 )
+frames = SubResource( 26 )
+animation = "simple_anim"
+frame = 1
+playing = true
 
 [node name="ProjectSpawn" type="Position2D" parent="."]
 position = Vector2( 1, 1 )

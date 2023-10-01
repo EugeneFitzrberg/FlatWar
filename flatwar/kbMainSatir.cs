@@ -1,11 +1,8 @@
 using Godot;
 using System;
 
-public class MainSatir : Node2D
+public class kbMainSatir : KinematicBody2D
 {
-	// Declare member variables here. Examples:
-	// private int a = 2;
-	// private string b = "text";
 	Vector2 velocity = new Vector2();
 
 	private PlayerController playerController;
@@ -15,6 +12,9 @@ public class MainSatir : Node2D
 	private float attackFreezeReset = 1f;
 	[Export]
 	public PackedScene BulletForSatir;
+	// Declare member variables here. Examples:
+	// private int a = 2;
+	// private string b = "text";
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -22,75 +22,72 @@ public class MainSatir : Node2D
 		
 	}
 	public override void _Process(float delta)
-  {
-		if (active) {
-			Position += Transform.x * delta * 25;
-			var angle = GlobalPosition.AngleToPoint(playerController.GlobalPosition);
-			if (Mathf.Abs(angle) > Mathf.Pi / 2)
+	{
+		if (active)
+		{
+			if (ableToAttack)
 			{
-				GetNode<AnimatedSprite>("AnimatedSprite").FlipV = false;
-			}
-			else {
-				GetNode<AnimatedSprite>("AnimatedSprite").FlipV = true;
-			}
-
-			if (ableToAttack) {
 
 				GD.Print("Shoot");
 				GD.Print(playerController.Position);
 				LookAt(playerController.Position);
 				this.GetNode<Position2D>("ProjectSpawn").LookAt(playerController.Position);
-				BulletForSatir bullet = BulletForSatir.Instance () as BulletForSatir;
+				BulletForSatir bullet = BulletForSatir.Instance() as BulletForSatir;
 				Owner.AddChild(bullet);
 				bullet.GlobalTransform = this.GetNode<Position2D>("ProjectSpawn").GlobalTransform;
 
 				var spaceStat = GetWorld2d().DirectSpaceState;
-				
+
 				Godot.Collections.Dictionary result = spaceStat.IntersectRay(this.Position, playerController.Position, new Godot.Collections.Array { this });// not working
-				if (result != null) {
+				if (result != null)
+				{
 					GD.Print(result.Count);
 					if (result.Contains("collider"))
 					{
 						GD.Print("collider");
 					}
 				}
-				
+
 				ableToAttack = false;
 				//GD.Print("!");
 				attackFreeze = attackFreezeReset;
 			}
-			
+
 		}
 
 		if (attackFreeze <= 0)
 		{
 			ableToAttack = true;
 		}
-		else {
+		else
+		{
 			attackFreeze -= delta;
 		}
-  }
-
-
-
-private void _on_Detection_Radius_body_entered(object body)
-{
-	GD.Print("Body has entered "  + body);
-		if (body is PlayerController) { 
+	}
+	//  // Called every frame. 'delta' is the elapsed time since the previous frame.
+	//  public override void _Process(float delta)
+	//  {
+	//      
+	//  }
+	private void _on_Detection_Radius_body_entered(object body)
+	{
+		GD.Print("Body has entered " + body);
+		if (body is PlayerController)
+		{
 			playerController = body as PlayerController;
 			active = true;
-			
-			//Position += playerController.Position.x;
+
 		}
-}
+	}
 
 
-private void _on_Detection_Radius_body_exited(object body)
-{
-	
-	GD.Print("Body has closed " + body);
-		if (body is PlayerController) { 
+	private void _on_Detection_Radius_body_exited(object body)
+	{
+
+		GD.Print("Body has closed " + body);
+		if (body is PlayerController)
+		{
 			active = false;
 		}
-}
+	}
 }
