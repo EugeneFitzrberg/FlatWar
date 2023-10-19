@@ -1,11 +1,12 @@
 using Godot;
 using System;
 
-public class pet : KinematicBody2D
+public class pet : KinematicBody2D, FlatWar.IEnemy
 {
 	private bool isMove = false;
 	private bool isPcDetected = false;
 	PlayerController pc;
+	Vector2 velocity = new Vector2();
 	// Declare member variables here. Examples:
 	// private int a = 2;
 	// private string b = "text";
@@ -25,9 +26,20 @@ public class pet : KinematicBody2D
 		{
 			LookAt(pc.Position);
 			if(!isPcDetected){
-			Position += Transform.x * delta * 25;
+				velocity += Transform.x * delta * 20 * 20 * 5;
+				MoveAndSlide(velocity, Vector2.Up);
+				velocity = new Vector2();
 			}
 		}
+	}
+
+	public void removePet()
+	{
+		try
+		{
+			QueueFree();
+		}
+		catch (Exception ex) { }
 	}
 	private void _on_DetectionRadius_body_entered(object body)
 	{
@@ -60,8 +72,10 @@ public class pet : KinematicBody2D
 		}
 	}
 
-
-
+	public void removeEnemy()
+	{
+		removePet();
+	}
 }
 
 

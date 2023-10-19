@@ -60,7 +60,7 @@ position = Vector2( -0.999995, 5.36442e-06 )
 scale = Vector2( 0.9375, 1 )
 frames = SubResource( 26 )
 animation = "simple_anim"
-frame = 1
+frame = 4
 playing = true
 
 [node name="ProjectSpawn" type="Position2D" parent="."]
